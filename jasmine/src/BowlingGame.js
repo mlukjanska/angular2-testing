@@ -38,7 +38,8 @@ BowlingGame.prototype.score = function() {
 			frameIndex++;
 		} else if (isSpare()) {
 			score += 10 + spareBonus();
-			frameIndex++;
+			//incorrect frameIndex++;
+            frameIndex += 2;
 		} else {
 			score += sumOfBallsInFrame();
 			frameIndex += 2;
